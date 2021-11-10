@@ -1,4 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
+namespace NewApp;
 class Program
 {
     public string name;
@@ -31,7 +32,6 @@ class Program
         //c = int.Parse(Console.ReadLine());
         //if (a * a + b * b == c * c) { Console.WriteLine("OK"); }
         //else { Console.WriteLine("Not OK"); }
-
         //int[] tab1 = {1, 3, 4, 5, 10};
         //Array.Sort(tab1);
         //   foreach (int i in tab1)
