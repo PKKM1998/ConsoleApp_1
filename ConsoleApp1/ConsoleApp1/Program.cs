@@ -6,7 +6,7 @@ class Producer
     public string swname;
     public int cyint;
     public double ssstatus;
-    public string companystatus = "active";
+    
     public Producer(string ProducerName, string SoftwareName, int CreationYear, double StockStatus)
     {
         ppname = ProducerName;
@@ -14,16 +14,18 @@ class Producer
         cyint = CreationYear;
         ssstatus = StockStatus;
     }
-    public void getDataProducer()
-    {
-        Console.WriteLine(ppname + "\n" + swname + "\n" + cyint + "\n" + ssstatus + "\n" + companystatus);
-    }
+   
     class ProducerStatus : Producer
     {
+        public string companystatus;
         public ProducerStatus(string ProducerName, string SoftwareName, int CreationYear, double StockStatus, string corpstatus) : base(ProducerName, SoftwareName, CreationYear, StockStatus)
         {
             companystatus = corpstatus;
         }
+    }
+    public void getDataProducer()
+    {
+        Console.WriteLine(ppname + "\n" + swname + "\n" + cyint + "\n" + ssstatus + "\n" + companystatus);
     }
 }
 class Program
